@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #373A40;
+}
+
+/* APP */
+.generator-app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 25rem;
+    width: 40rem;
+    background-color: #88898C;
+    border: 2px solid #292b30;
+    border-radius: 20px;
+    font-family: "MierB03", "Helvetica", "Arial", sans-serif;
+}
+
+.heading h1 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    
+    color: #1d1d1f;
+}
+
+/* GENERATED PASSWORD */
+.input-container {
+    display:flex;
+    justify-content: center;
+}
+
+.password-input input{
+    height: 2.5rem;
+    width: 20rem;
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    outline: none;
+}
+.generator-btn {
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+}
+
+.generator-btn:hover {
+    background-color: #313134;
+    border: 2px solid #080808;
+    color: #f8f2f2;
+}
