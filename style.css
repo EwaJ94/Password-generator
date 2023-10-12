@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #373A40;
+    background-color: #566072;
 }
 
 /* APP */
@@ -15,37 +15,48 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 25rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    height: 20rem;
     width: 40rem;
     background-color: #88898C;
     border: 2px solid #292b30;
     border-radius: 20px;
     font-family: "MierB03", "Helvetica", "Arial", sans-serif;
+    box-shadow: 10px 10px 5px rgb(51, 50, 50);
 }
 
+
 .heading h1 {
+    width: 40rem;
+    grid-column: 1 / 4;
+    grid-row: 1;
     text-align: center;
     margin-top: 1rem;
     font-size: 1.8rem;
     font-weight: 800;
-    
     color: #1d1d1f;
 }
 
 /* GENERATED PASSWORD */
 .input-container {
     display:flex;
+    width: 40rem;
+    grid-column: 1 / 3;
+    grid-row: 2;
     justify-content: center;
 }
 
 .password-input input{
     height: 2.5rem;
-    width: 20rem;
-    margin-right: 2rem;
+    width: 30rem;
+    margin-right: 1rem;
     font-size: 1.3rem;
     padding: 0.5rem;
     outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 .generator-btn {
     height: 2.5rem;
@@ -54,10 +65,70 @@ body {
     font-size: 1rem;
     font-weight: 700;
     outline: none;
+    letter-spacing: 0.04rem;
 }
 
 .generator-btn:hover {
-    background-color: #313134;
+    background-color: #566072;
     border: 2px solid #080808;
     color: #f8f2f2;
+}
+
+/* PASSWORD LENGTH */
+.generator-setting {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+.password-length {
+    grid-column: 1;
+    grid-row: 3;
+    margin-right: 4rem;
+    
+}
+
+.password-length p {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.password-length #length {
+    height: 1.7rem;
+    width: 3.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* CHARACTERS */
+
+.characters-used {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.characters-used p {
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.characters {
+    margin-top: 1.3rem;
+    
+}
+
+.characters input {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    outline: none;
 }
