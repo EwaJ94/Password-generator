@@ -98,10 +98,10 @@ body {
 
 .password-length #length {
     height: 1.7rem;
-    width: 3.5rem;
+    width: 4rem;
     font-size: 1rem;
     padding: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 1.7rem;
     outline: none;
     border: 1px solid black;
     border-radius: 5px;
