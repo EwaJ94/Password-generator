@@ -1,0 +1,49 @@
+@media only screen and (max-width: 650px) {
+    .generator-app {
+        box-shadow: none;
+        width: 35rem;
+    }
+
+    .heading h1 {
+        padding-right:5rem;
+    }
+
+    .input-container {
+        width: 34rem;
+    }
+
+    .password-input input{
+        width: 23rem;
+        margin-right: 2rem;
+    }
+
+    .generator-setting {
+        margin-right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .generator-app {
+        width: 30rem;
+    }
+
+    .heading h1 {
+        padding-right: 10rem;
+    }
+
+    .input-container {
+        width: 20rem;
+        
+    }
+
+    .password-input input{
+        width: 20rem;
+        margin-left: 10rem;
+    }
+
+    .generator-setting {
+        margin-right: 6rem;
+    }
+
+   
+}
