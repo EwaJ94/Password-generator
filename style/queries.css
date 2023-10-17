@@ -1,11 +1,10 @@
 @media only screen and (max-width: 650px) {
     .generator-app {
-        box-shadow: none;
         width: 35rem;
     }
 
     .heading h1 {
-        padding-right:5rem;
+        width: 35rem;
     }
 
     .input-container {
@@ -28,12 +27,11 @@
     }
 
     .heading h1 {
-        padding-right: 10rem;
+        width: 30rem;
     }
 
     .input-container {
         width: 20rem;
-        
     }
 
     .password-input input{
@@ -41,9 +39,37 @@
         margin-left: 10rem;
     }
 
-    .generator-setting {
-        margin-right: 6rem;
+    .generator-btn {
+        padding: 0.3rem;
     }
 
-   
+    .generator-setting {
+        width: 30rem;
+    }
+  
+}
+
+@media only screen and (max-width: 500px) {
+    .generator-app {
+        width: 25rem;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+        width: 25rem;
+    }
+
+    .input-container {
+        width: 15rem;
+    }
+
+    .password-input input{
+        width: 15rem;
+        margin-left: 10rem;
+    }
+
+    .generator-setting {
+        width: 25rem;
+    }
+
 }
